@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+/* 전체설정 */
+* {margin: 0; padding: 0;}
+.wrap {display: 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 0 auto;}
+/* 박스1과 박스2 가로정렬 */
+
+.box1>h1 {position: absolute;
+            width: 100%;
+            height: 20px;
+            background-color: blue;
+        
+        }
+
+.box1>nav {width: 100%;
+        background-color: aquamarine;
+    }
+
+.box1 {display: flex;
+    width: 30%;
+        position: relative;
+        align-content: center;
+        }
+
+
+.box2 {width: 70%;
+        height: 50px;
+        float: left;
+        background-color: beige;}
+
+.boxA {content: "";
+        clear: both;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;}
+
+.play {display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;}
+.box3 {width: 50%;
+        height: 200px;
+        background-color: darkorchid;}
+
+.box4 {width: 50%;
+        height: 200px;
+        background-color: indianred;}
+
+.boxD {width: 100%;
+        height: 150px;
+        background-color: olive;}
+.boxE {width: 100%;
+        height: 100px;
+        background-color: darkkhaki;}
+.boxF {width: 100%;
+        height: 50px;
+        background-color: gray;}
+
