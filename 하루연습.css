@@ -1,0 +1,34 @@
+/* 언어설정 */
+@charset "utf-8";
+
+@media (min-width:900px){
+/* 박스1, 2, 3가로설정 */
+.box1 {float: left;
+        width: 40%;}
+.box2 {float: left;
+        width: 30%;}
+.box3 {float: left;
+        width: 40%;}
+.boxB {content: "";
+            display: flex;
+            clear: both;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        align-items: flex-start;}
+
+
+@media (min-width:899px ){
+/* 박스5~8의 가로정렬 */
+.box5 {float: left;
+        width: 40%;}
+.box6 {float: left;
+        width: 30%;}
+.box7 {float: left;
+        width: 20%;}
+.box8 {float: left;
+        width: 10%;}
+.boxC {content: "";
+                clear: both;
+                display: flex;}
+
+}
