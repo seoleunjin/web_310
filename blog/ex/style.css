@@ -1,7 +1,29 @@
 /* 언어 설정 */
 @charset "uft-8";
+
+/* 언어설정 */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Paytone+One&display=swap');
+</style>
  /* 전체설정 */
  * {margin: 0; padding: 0;}
+ a {text-decoration: none;
+    color: black;}
+ul {list-style: none;}
+
+.logo {font-size: 30px;
+        font-weight: normal;
+        font-family: 'Nanum Pen Script', cursive;
+font-family: 'Paytone One', sans-serif;
+}
+
+.box2 {background-color: #7acba1;
+    padding: 15px;
+}
+.box2>ul {display: flex;}
+.box2>ul>li {width: auto;}
+.box2>ul>li>a {display: block;
+                font-size: 14px;
+                padding: 10px;}
 
 
 

@@ -1,0 +1,25 @@
+/* 언어 설정 */
+@charset "uft-8";
+ /* 전체설정 */
+ * {margin: 0; padding: 0;}
+
+
+
+/* 모바일 설정 */
+
+@media (min-width:768px){
+/* 박스3 박스4 가로설정 */
+.box3 {width: 70%;
+    float: left;}
+.box4 {width: 30%;
+    float: left;}
+.boxA::after {content:"";
+        clear: both;
+        display: block;}
+}
+
+/* 웹설정 */
+@media (min-width:1280px){
+    .box1, .boxA {width: 1280px;
+                    margin: 0 auto;} 
+}
