@@ -5,8 +5,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Paytone+One&display=swap');
 </style>
  /* 전체설정 */
- * {margin: 0; padding: 0;}
- a {text-decoration: none;
+* {margin: 0; padding: 0;}
+a {text-decoration: none;
     color: black;}
 ul {list-style: none;}
 
@@ -26,6 +26,147 @@ font-family: 'Paytone One', sans-serif;
                 padding: 10px;}
 
 
+/* 음식 외출 설정 */
+.button {
+    margin-top: 30px;
+}
+
+.button span {
+    background-color: lightgoldenrodyellow;
+    margin-right: 10px;
+}
+.button span a {
+    font-size: 15px;
+    font-weight: 600;
+    display:inline-block;
+    padding: 10px;
+    border-radius: 100px;
+    
+}
+
+/* 박스A 설정 */
+.box A {
+
+}
+.box3 h2 {
+    font-size: 36px;
+
+}
+.box3 h3 {
+    border-left: solid 30px #7acba1;
+    padding-left: 30px;
+}
+.box3 img {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+}
+.box3 time {}
+.box3 p {
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: normal;
+}
+/* 관련기사설정 */
+div.relevant {
+    width: 100%;
+    height: 200px;
+    background-color: beige;
+    align-items: center;
+    
+}
+.relevant h4 {
+    margin-top: 20px;
+    background-color: beige;
+    margin-bottom: 0;
+    color: indianred;
+}
+.relevant img {
+    width: 98px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+/* 특집기사 */
+.article {
+    margin-top: 40px;
+}
+.article ul {
+    margin: 0;
+    padding: 0;
+}
+.article h3 {
+    border-bottom: dotted 3px #ddd;
+    padding-bottom: 10px;
+    color: #666;
+}
+.article li {
+    margin-top: 10px;
+}
+.article li>a {
+    display: block;
+    font-size: 14px;
+}
+
+/* 추천기사 */
+.recommend {
+    margin-top: 40px;
+}
+.recommend ul {
+    margin: 0;
+    padding: 0;
+}
+.recommend h3 {
+    border-bottom: dotted 3px #ddd;
+    padding-bottom: 10px;
+    color: #666;
+}
+.recommend li {
+    margin-top: 10px;
+}
+.recommend li>a {
+    display: block;
+    font-size: 14px;
+}
+
+/* 인기기사 */
+.popular {
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+.popular ul {
+    margin: 0;
+    padding: 0;
+}
+.popular h3 {
+    border-bottom: dotted 3px #ddd;
+    padding-bottom: 10px;
+    color: #666;
+}
+.popular li {
+    margin-top: 10px;
+}
+.popular li>a {
+    display: block;
+    font-size: 14px;
+}
+
+/* 푸터영역 */
+.box5 {
+    border-top: solid 1px #ddd;
+}
+.box5 p {
+    font-size: 10px;
+    color: #ddd;
+}
+
+
+
+
+
+/* 마진영역 */
 
 /* 모바일 설정 */
 
@@ -38,6 +179,14 @@ font-family: 'Paytone One', sans-serif;
 .boxA::after {content:"";
         clear: both;
         display: block;}
+}
+
+/* 박스3과 박스4 좌우간격 */
+.box3 {
+    padding-right: 30px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 /* 웹설정 */
