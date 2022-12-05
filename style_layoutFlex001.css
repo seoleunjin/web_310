@@ -1,0 +1,17 @@
+/* 언어설절 */
+@charset "utf-8"
+
+
+.boxA {display: flex;}
+.box1 {width: 20%;}
+.box2 {width: 80%;}
+
+/* 박스C 플랙스정렬 */
+.boxC {display: flex;}
+.boxC>div {flex: 1;}
+
+/* 박스D 플랙스정렬 */
+.boxD {display: flex;}
+.box6 {width: 20%;}
+.box7 {width: 80%;}
+

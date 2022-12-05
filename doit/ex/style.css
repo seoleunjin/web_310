@@ -1,0 +1,135 @@
+/* 언어설정 */
+@charset "utf-8";
+
+* {margin: 0; padding: 0;}
+
+#wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* 해더설정 */
+.header {
+    background: aqua;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+}
+
+
+.slider_section {
+    display: flex;
+    width: 33.3333%;
+    position: relative;
+}
+
+.slider_section>h1 {
+    background-color: beige;
+    width: 30%;
+    height: 280px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+.slider_section>nav {
+    background-color: beige;
+    width: 100%;
+    height: 250px;
+}
+
+.gallery_section{
+    display: flex;
+    width: 33.3333%;
+    position: relative;
+}
+
+.gallery_section>h1 {
+    background-color: brown;
+    width: 30%;
+    height: 280px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.gallery_section>nav {
+    width: 100%;
+    height: 250px;
+    background-color: brown;
+}
+
+.rankup_section {
+    width: 33.3333%;
+    display: flex;
+    position: relative;
+}
+
+.rankup_section>h1{
+    background-color: cadetblue;
+    width: 30%;
+    height: 280px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.rankup_section>nav{
+    background-color: cadetblue;
+    width: 100%;
+    height: 250px;
+}
+
+
+.latest_post_section {
+    width: 40%;
+    height: 200px;
+    background-color: darkkhaki;
+}
+
+
+.popular_section {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.popular_section01 {
+    width: 100%;
+    height: 100px;
+    background-color: deeppink;
+}
+
+.popular_section02 {
+    width: 100%;
+    height: 100px;
+    background-color: deepskyblue;
+}
+
+.banner_section {
+    width: 25%;
+    background-color: lightcoral;
+}
+
+.social_section {
+    width: 15%;
+    background-color: slategrey;
+}
+
+.footer {
+    width: 100%;
+    height: 50px;
+    background-color: springgreen;
+}
+
+
+
+/* 미디어 연결 */
+
+@media (min-width:1000px){
+    .
+}

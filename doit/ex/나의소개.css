@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+
+/* 웹폰트설정 */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+/* 전체설정 */
+
+
+* {margin: 0; padding: 0;}
+body {font-family: 'Nanum Pen Script', cursive;
+        line-height: 1;
+        background: linear-gradient(to bottom #77ddff , #ffffff);}
+
+    ul {list-style: none;}
+    li {list-style: none;}
+    img {vertical-align: top;}
+
+
+
+.wrap {display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 0 auto;}
+
+/* 로고와 내비 가로정렬 */
+
+
+
+.logo_A {width: 20%;
+        float: left;
+        height: 100px;
+        background-color: beige;
+        order: 1;
+        }
+
+.logo {background-color: deeppink;
+        position: absolute;
+        margin-top: 25px;
+        margin-left: 25px;
+}
+
+.logo>h1>a {align-items: center;}
+
+
+.nav {width: 80%;
+        background-color: beige;
+        order: 2;
+    }
+
+.menu {display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+
+    }
+
+.menu>li {display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+
+}
+
+.menu>li>a {display: block;
+            font-size: 30px;}
+
+.header {content: "";
+        clear: both;
+        display: flex;
+        width: 100%;
+        position: relative;
+    }
+.info {
+        width: 100%;
+        background-color: aquamarine;
+    }
+
+.info>ul {display: flex;
+            justify-content: center;
+            }
+.info>ul>li {width: 30%;
+            flex-direction: row;}
+.inpo>ul>li>a {align-content: center;
+                display: block;}
+
+
+
+
+    /* 미디어뭐리구간 */
+    /* 모바일구간320px */
+
+
+    /* 태블릿구간 768px*/
+
+
+
+
+    /* 토글버튼 */
+    .toggle_A {display: none;}
+    .toggle_1 {display: none;}
+
+    /* 웹구간 1280px*/
