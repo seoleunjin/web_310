@@ -68,6 +68,14 @@ font-family: 'Paytone One', sans-serif;
     padding-bottom: 10px;
     font-weight: normal;
 }
+
+/* sns설정 */
+.sns {}
+.sns {}
+.sns {}
+.sns {}
+.sns {}
+
 /* 관련기사설정 */
 div.relevant {
     width: 100%;
@@ -75,13 +83,16 @@ div.relevant {
     background-color: beige;
     align-items: center;
     
-}
+}      
 .relevant h4 {
+    text-align: center;
     margin-top: 20px;
     background-color: beige;
     margin-bottom: 0;
     color: indianred;
 }
+
+.img {}
 .relevant img {
     width: 98px;
     height: auto;
@@ -109,6 +120,10 @@ div.relevant {
     display: block;
     font-size: 14px;
 }
+.article li a i {
+    font-size: 12px;
+    color: #666;
+}
 
 /* 추천기사 */
 .recommend {
@@ -125,10 +140,29 @@ div.relevant {
 }
 .recommend li {
     margin-top: 10px;
+    position: relative;
 }
 .recommend li>a {
     display: block;
     font-size: 14px;
+}
+
+.recommend img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+.recommend .text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(00, 00, 00, 0.5);
+    color: #fff;
+    width: 100%;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 /* 인기기사 */
@@ -146,11 +180,33 @@ div.relevant {
     color: #666;
 }
 .popular li {
+    content: "";
+    display: block;
     margin-top: 10px;
+    border-bottom: 3px dotted #ddd;
 }
 .popular li>a {
     display: block;
     font-size: 14px;
+}
+.popular li a::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.popular .text {
+    float: none;
+    width: auto;
+    margin-left: 60px;
+}
+.popular img {
+    float: left;
+    width: auto;
+}
+.popular span {
+    display: block;
+    font-size: 12px;
+    color: #666;
 }
 
 /* 푸터영역 */
