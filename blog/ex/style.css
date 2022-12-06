@@ -3,7 +3,7 @@
 
 /* 언어설정 */
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Paytone+One&display=swap');
-</style>
+
  /* 전체설정 */
 * {margin: 0; padding: 0;}
 a {text-decoration: none;
@@ -65,36 +65,81 @@ font-family: 'Paytone One', sans-serif;
 .box3 p {
     font-size: 15px;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 50px;
     font-weight: normal;
 }
 
 /* sns설정 */
-.sns {}
-.sns {}
-.sns {}
-.sns {}
-.sns {}
+.sns {
+    margin: 20px 0;
+}
+.social {
+    display: flex;
+}
+.social li {
+    flex: 1;
+}
+.social li a {
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    color: #fff;
+    font-weight: bold;
+}
+.social li a i {
+    padding-right: 5px;
+    color: #fff;
+}
+.social li:nth-child(1) a {
+    background-color: #1da1f2;
+}
+.social li:nth-child(2) a {
+    background-color: #1877f2;
+}
+.social li:nth-child(3) a {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#833ab4+0,fd1d1d+36,f77737+68,c13584+100 */
+background: #833ab4; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #833ab4 0%, #fd1d1d 36%, #f77737 68%, #c13584 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #833ab4 0%,#fd1d1d 36%,#f77737 68%,#c13584 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #833ab4 0%,#fd1d1d 36%,#f77737 68%,#c13584 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#833ab4', endColorstr='#c13584',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    
+}
 
 /* 관련기사설정 */
-div.relevant {
+.relevant {
+    display: flex;
     width: 100%;
-    height: 200px;
+    height: auto;
     background-color: beige;
-    align-items: center;
-    
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
 }      
 .relevant h4 {
-    text-align: center;
+    padding: 20px;
     margin-top: 20px;
     background-color: beige;
     margin-bottom: 0;
     color: indianred;
 }
 
+.relevant ul {display: flex;
+            padding: 10px;
+}
+.relevant ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.relevant ul li {width: 25%;
+                padding: 10px 10px;}
+.relevant ul li a {display: block;
+                    width: ;}
 .img {}
 .relevant img {
-    width: 98px;
+    width: 100%;
     height: auto;
     margin: 0;
     padding: 0;
@@ -123,6 +168,7 @@ div.relevant {
 .article li a i {
     font-size: 12px;
     color: #666;
+    padding-right: 10px;
 }
 
 /* 추천기사 */
@@ -214,7 +260,9 @@ div.relevant {
     border-top: solid 1px #ddd;
 }
 .box5 p {
-    font-size: 10px;
+    padding-left: 10px;
+    margin: 10px 0;
+    font-size: 20px;
     color: #ddd;
 }
 
@@ -223,7 +271,10 @@ div.relevant {
 
 
 /* 마진영역 */
+.box1, .box2, .box3 {
+    padding-left: 10px;
 
+}
 /* 모바일 설정 */
 
 @media (min-width:768px){
@@ -244,8 +295,32 @@ div.relevant {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
+/* 미디어설정 */
+/* 모바일구간 1*/ 
+
+
+@media (max-width:599px){
+    .relevant ul li {width: 50%;}
+
+}
+
+/* 모바일구간2 */
+
+@media (min-width:600px) and (max-width:767px){
+
+    .box4-1 {
+        float: left;
+        width: 49%;
+    }
+    .box4-2 {
+        float: left;
+        width: 49%;
+    }
+
+}
 
 /* 웹설정 */
+
 @media (min-width:1280px){
     .box1, .boxA {width: 1280px;
                     margin: 0 auto;} 

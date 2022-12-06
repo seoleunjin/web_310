@@ -18,10 +18,14 @@ body {font-family: 'Nanum Pen Script', cursive;
     a {text-decoration: none;}
 
 
-.wrap {
-    display: block;
+.wrap { display: flex;
     flex-direction: row;
-    width: 100%;
+    flex-wrap: wrap;
+        /*flex-flow:row wrap */
+    width: 90%;
+    /* margin: 0 5% 0 5%; */
+    margin: 0 auto; /*화면중앙에배치*/
+
 }
 
 .header {
@@ -34,56 +38,281 @@ body {font-family: 'Nanum Pen Script', cursive;
 .logo {
     width: 20%;
     display: flex;
-    background-color: beige;
+    background-color: #833ab4;
     justify-content: center;
     align-items: center;
     text-align: center;
     height: 150px;
+    position: absolute;
 }
 
-.logo h1 {
-    width: auto;
-    width: 100%;
-}
-.logo>h1>a {
-    display: block;
-    font-size: 15px;
+
+
+.logo a {
+    font-size: 35px;
     font-weight: bold;
+    color: #fff;
+
 }
 .nav {display: flex;
-    width: 80%;
+    width: 100%;
+    height: 120px;
     justify-content: center;
     align-items: center;
-    background-color: beige;
+    background-color: #833ab4;
 }
 .menu {display: flex;
         width: 100%;
         justify-content: space-between;
         margin: 0 100px;
+
     }
-.menu li {width: auto;}
+.menu li {width: auto;
+            margin-left: 150px;}
 .menu li>a {
     display: block;
-    font-size: 15px;
+    font-size: 30px;
     font-weight: bold;
+    color: #fff;
 }
 
+.header {
+    position: relative;
+}
 /* 인포영역 */
 .info {
     display: flex;
-    width: auto;
-    background-color: aqua;
-    justify-content: center;
+    width: 100px;
+    background-color: #833ab4;
+    justify-content: space-between;
+    position: absolute;
     align-items: center;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+    z-index: 20;
+
 }
-.info ul {display: block;}
-.info ul>li {}
-.info ul>li>a {}
+.info ul {display: flex;
+            justify-content: space-around;
+            align-items: center;}
+.info ul>li {display: auto;}
+.info ul>li>a {display: block;
+                color: #fff;}
 
 /* 토글버튼 */
 .toggle_A {display: none;}
 .toggle_1 {display: none;}
 
-    
 
-    /* 웹구간 1280px*/
+/* 박스1과 박스2 가로정렬 */
+.boxA {
+    display: flex;
+    width: 100%;
+    height: 300px;
+}
+/* 슬라이더영역 */
+.slider_section {
+    display: flex;
+    width: 70%;
+    background-color: lightgoldenrodyellow;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slider_section>span {
+    width: 34px;
+    height: 39px;
+    background-color: #000;
+    cursor: pointer;
+    text-indent: -9999px;
+    z-index: 10;
+}
+
+.prev_btn {
+    background-image: url(../img/slider_arrow.png);
+    background-position: top left center;
+    margin-left: -10px;
+
+}
+.next_btn {
+    background-image: url(../img/slider_arrow.png);
+    background-position: top right;
+    margin-right: -10px;
+}
+
+.box2 {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.box2-1 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f77737;
+    flex-direction: column;
+
+
+}
+.box2 img {
+    width: 50%;
+    height: 50%;
+}
+.box2 a {
+    color: #fff;
+    padding: 10px;
+}
+.box2-2 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fcaf45;
+    flex-direction: column;
+
+}
+
+/* 스토리설정 */
+.story {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 300px;
+    background-color: #e1306c;
+    text-align: left;
+}
+.story h2 {
+    font-size: 30px;
+    color: #fff;
+    padding-bottom: 10px;
+}
+.deagu {
+    display: flex;
+    flex-direction: column;
+}
+.deagu li {
+    width: auto;
+}
+.deagu li a {
+    display: block;
+    color: #ffffff;
+    padding: 10px 0;
+}
+.deagu li a i {
+    padding-right: 10px;
+}
+
+/* sns 설정 */
+.sns {
+    width: 30%;
+    background-color: silver;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social {
+    display: flex;
+}
+.social li {width: auto;
+            padding: 0 10px;
+
+}
+.social li a {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.social li a i {
+    color: #fff;
+    font-size: 15px;
+}
+
+
+.box4 {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 300px;
+    background-color: #f77737;
+    text-align: left;
+}
+.box4 h2 {
+    font-size: 30px;
+    color: #fff;
+    padding-bottom: 10px;
+}
+.box4 {
+    display: flex;
+    flex-direction: column;
+}
+.box4 li {
+    width: auto;
+}
+.box4 li a {
+    display: block;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+
+
+
+
+.box5 {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 300px;
+    background-color: #f77737;
+    text-align: left;
+}
+.box5 h2 {
+    font-size: 30px;
+    color: #fff;
+    padding-bottom: 10px;
+}
+.box5 {
+    display: flex;
+    flex-direction: column;
+}
+.box5 li {
+    width: auto;
+}
+.box5 li a {
+    display: block;
+    color: #ffffff;
+    padding: 10px 0;
+}
+.box6 {
+    width: 70%;
+    height: 50px;
+    background-color: #ddd;
+}
+
+
+
+/* 미디어구간#################### */
+/* 모바일구간 */
+@media (max-width:767px){}
+/* 태블릿구간 */
+@media (min-width:767px) and (max-width:1000px){}
+/* 웹구간 1280px*/
+@media (min-width:1000px){}
+#wrap {max-width: 1200px;}
