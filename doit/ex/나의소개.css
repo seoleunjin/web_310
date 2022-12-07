@@ -79,27 +79,6 @@ body {font-family: 'Nanum Pen Script', cursive;
 .header {
     position: relative;
 }
-/* 인포영역 */
-.info {
-    display: flex;
-    width: 100px;
-    background-color: #833ab4;
-    justify-content: space-between;
-    position: absolute;
-    align-items: center;
-    top: 0;
-    right: 0;
-    margin-top: 10px;
-    margin-right: 10px;
-    z-index: 20;
-
-}
-.info ul {display: flex;
-            justify-content: space-around;
-            align-items: center;}
-.info ul>li {display: auto;}
-.info ul>li>a {display: block;
-                color: #fff;}
 
 /* 토글버튼 */
 .toggle_A {display: none;}
@@ -115,7 +94,8 @@ body {font-family: 'Nanum Pen Script', cursive;
 /* 슬라이더영역 */
 .slider_section {
     display: flex;
-    width: 70%;
+    width: 60%;
+    height: 400px;
     background-color: lightgoldenrodyellow;
     align-items: center;
     justify-content: space-between;
@@ -142,40 +122,170 @@ body {font-family: 'Nanum Pen Script', cursive;
     margin-right: -10px;
 }
 
-.box2 {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-}
-.box2-1 {
-    width: 100%;
-    height: 50%;
-    display: flex;
+.box2 {display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f77737;
-    flex-direction: column;
-
-
+    width: 20%;
+    background-color: #ffdc80;
 }
-.box2 img {
-    width: 50%;
-    height: 50%;
-}
-.box2 a {
-    color: #fff;
+
+.box2 div>ul {display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+padding: 30px 0;}
+.box2 div>ul>li {
+    width:auto ;
+    height: auto;
     padding: 10px;
+    text-align: center;
 }
-.box2-2 {
-    width: 100%;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fcaf45;
-    flex-direction: column;
+.box2 div>ul>li>a {display: block;
+}
+.box2 ul>li>a {
+    transition: all 0.6s;
 
 }
+.box2 ul>li>a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.box2 ul>li:nth-child(2)>a {
+    
+
+}
+.box2 img {width: 100%;
+        height: 100%;}
+
+.box2 {display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    background-color: #ffdc80;
+}
+
+.box2 div>ul {display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+padding: 30px 0;}
+.box2 div>ul>li {
+    width:auto ;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+}
+.box2 div>ul>li>a {display: block;
+}
+.box2 ul>li>a {
+    transition: all 0.6s;
+
+}
+.box2 ul>li>a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.box2 ul>li:nth-child(2)>a {
+    
+
+}
+.box2 img {width: 100%;
+        height: 100%;}
+
+
+.box2 {display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    background-color: #ffdc80;
+}
+
+.box2 div>ul {display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+padding: 30px 0;}
+
+.box2 div>ul>li {
+    width:auto ;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+}
+.box2 div>ul>li>a {display: block;
+}
+.box2 ul>li>a {
+    transition: all 0.6s;
+
+}
+.box2 ul>li>a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+.box2 img {width: 100%;
+        height: 100%;}
+
+
+.box7 {display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    background-color: #c1d82f;
+}
+
+.box7 div>ul {
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: center;
+
+flex-direction: column;
+flex-wrap: wrap;
+padding: 30px 0;}
+
+.box7 div>ul>li {
+    width:auto ;
+    height: auto;
+    padding-bottom: 30px;
+}
+.box7 div>ul>li>a {
+    display: block;
+    position: relative;
+    width: 250px;
+    height: 130px;
+    text-align: center;
+    overflow: hidden;
+    
+}
+.box7 img {width: 100%;
+    height: 100%;}
+
+.box7 .text {
+    display: flex;
+    font-size: 20px;
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -50px;
+    width: 100px;
+    height: 45px;
+    background-color: rgba(00, 00, 00, 0.5);
+    opacity: 0;
+    transition: all 0.5s;
+}
+.box7 .text:hover {
+    opacity: 1;
+    display: flex;
+    top: 50%;
+}
+
+
+
+.box7 img {width: 100%;
+        height: 100%;}
 
 /* 스토리설정 */
 .story {
@@ -240,6 +350,21 @@ body {font-family: 'Nanum Pen Script', cursive;
     font-size: 15px;
 }
 
+.social li:nth-child(1) a {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#833ab4+0,fd1d1d+34,f56040+50,ffdc80+66,833ab4+100 */
+background: #833ab4; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #833ab4 0%, #fd1d1d 34%, #f56040 50%, #ffdc80 66%, #833ab4 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #833ab4 0%,#fd1d1d 34%,#f56040 50%,#ffdc80 66%,#833ab4 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #833ab4 0%,#fd1d1d 34%,#f56040 50%,#ffdc80 66%,#833ab4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#833ab4', endColorstr='#833ab4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+.social li:nth-child(2) a {
+    background-color: #1877f2;
+}
+.social li:nth-child(3) a {
+    background-color: #34a853;
+}
 
 .box4 {
     flex-direction: column;
@@ -280,7 +405,7 @@ body {font-family: 'Nanum Pen Script', cursive;
     align-items: center;
     width: 30%;
     height: 300px;
-    background-color: #f77737;
+    background-color: #f56040;
     text-align: left;
 }
 .box5 h2 {
@@ -310,9 +435,58 @@ body {font-family: 'Nanum Pen Script', cursive;
 
 /* 미디어구간#################### */
 /* 모바일구간 */
-@media (max-width:767px){}
+@media (max-width:766px){
+
+}
 /* 태블릿구간 */
-@media (min-width:767px) and (max-width:1000px){}
+@media (min-width:767px) and (max-width:1000px){
+.header {
+    width: 100%;
+    flex-wrap: wrap;
+}
+/* 인포영역 */
+.info {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    background-color: #833ab4;
+    top: 0;
+    right: 0;
+
+}
+.info ul {display: flex;
+            justify-content: space-around;
+            align-items: center;}
+.info ul>li {display: auto;}
+.info ul>li>a {display: block;
+                color: #fff;}
+
+
+
+}
 /* 웹구간 1280px*/
-@media (min-width:1000px){}
+@media (min-width:1000px){
+    /* 인포영역 */
+.info {
+    display: flex;
+    width: 100px;
+    background-color: #833ab4;
+    justify-content: space-between;
+    position: absolute;
+    align-items: center;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+    z-index: 20;
+
+}
+.info ul {display: flex;
+            justify-content: space-around;
+            align-items: center;}
+.info ul>li {display: auto;}
+.info ul>li>a {display: block;
+                color: #fff;}
+
+}
 #wrap {max-width: 1200px;}
