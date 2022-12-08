@@ -1,0 +1,178 @@
+/* 언어설정 */
+@charset "UTF-8";
+/* 전체설정 */
+* {margin: 0; padding: 0;}
+a {text-decoration: none;
+    color: black;}
+ul {list-style: none;}
+
+
+.body {
+    display: block;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.logo {
+    width: 30%;
+    margin: 50px 0; 
+}
+
+.header p {
+    text-align: center;
+    width: 100%;
+    margin: 30px;
+}
+
+/* 컨테이너와 홈 가로정렬 */
+.container {
+    content: "";
+    display: block;
+    clear: both;
+}
+.main_section {
+    float: left;
+    width: 70%;
+    background-color: aqua;
+}
+
+.side_section {
+    float: right;
+    width: 30%;
+    background-color: aquamarine;
+}
+
+.post_home {
+    display: block;
+    flex-direction: column;
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+.post_title {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 100%;
+    border-bottom: dotted 10px #ddd;
+    padding: 20px;
+}
+.post_title a {
+    display: block;
+    font-size: 20px;
+    color: #666;
+    font-weight: bold;
+}
+.post_img {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 25%;
+    order: 3;
+}
+.post_img img {
+    margin: 30px 30px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    order: 1;
+    top: 0;
+
+}
+.date {
+    margin: 10px 10px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 14px;
+
+}
+.date span {
+    display: block;
+    font-size: 20px;
+}
+.post_story {
+    color: #666;
+    width: 60%;
+    position: absolute;
+    margin-left: 50%;
+    top: 120px;
+    right: 0;
+}
+.post_more {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 30px;
+}
+.post_more a {
+    background-color: blanchedalmond;
+    padding: 10px 10px;
+    border-radius: 30%;
+
+}
+
+.main_section ul {
+    display: flex;
+    justify-content: center;
+}
+.main_section ul li {
+    width: auto;
+}
+.main_section ul li a {
+    display: block;
+    padding:30px 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #666;
+}
+
+.side_section {
+    height: 100%;
+}
+.side_section h3 {
+    text-align: center;
+    margin: 20px 0;
+}
+.side_section li {
+    margin-left: 10px;
+    margin: 20px;
+}
+.cat {
+
+}
+.cat ul {}
+.cat ul li {}
+.cat ul li a {}
+.news {}
+.popular {}
+
+.footer {
+    background-color: antiquewhite;
+
+}
+.footer ul {
+
+}
+.footer ul li {
+    width: auto;
+}
+.footer ul li a {
+    display: block;
+}
+.footer p {}
+
+/* 우선순위 */
