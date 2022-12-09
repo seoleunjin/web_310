@@ -8,45 +8,39 @@ ul {list-style: none;}
 
 
 .body {
-    display: block;
-    width: 90%;
-    flex-wrap: wrap;
+    background-image: linear-gradient(to left  #faf6ed 50% ,#efe8d5 50%);
+    background-size: 60px;
+    display: flex;
 }
 
 .header {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    width: 1000px;
+    margin: 0 auto;
 }
 .logo {
+    text-align: center;
     width: 30%;
+    height: 100%;
     margin: 50px 0; 
 }
 
 .header p {
-    text-align: center;
-    width: 100%;
-    margin: 30px;
-}
-
-/* 컨테이너와 홈 가로정렬 */
-.container {
-    content: "";
-    display: block;
-    clear: both;
-}
-.main_section {
-    float: left;
-    width: 70%;
     background-color: aqua;
 }
 
+/* 컨테이너와 메인 가로정렬 */
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.main_section {
+    width: 70%;
+    height: 80%;
+}
+
 .side_section {
-    float: right;
     width: 30%;
-    background-color: aquamarine;
 }
 
 .post_home {
@@ -117,6 +111,7 @@ ul {list-style: none;}
     bottom: 0;
     right: 0;
     margin-bottom: 30px;
+    margin-right: 20px;
 }
 .post_more a {
     background-color: blanchedalmond;
@@ -143,6 +138,10 @@ ul {list-style: none;}
 .side_section {
     height: 100%;
 }
+.side_section ul {
+    
+
+}
 .side_section h3 {
     text-align: center;
     margin: 20px 0;
@@ -151,28 +150,73 @@ ul {list-style: none;}
     margin-left: 10px;
     margin: 20px;
 }
+.side_section a {
+    display: block;
+    text-align: center;
+    border-bottom: 3px #666;
+}
 .cat {
 
 }
 .cat ul {}
 .cat ul li {}
 .cat ul li a {}
-.news {}
+.news {
+    width: 100%;
+}
+.news h3 {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+}
+.news p {
+    text-align: center;
+}
+.news form {
+    margin: 20px 0;
+    text-align: center;
+    display: flex;
+    height: 20px;
+
+}
+.news in[email] {
+    width: 60%;
+}
+.news form[sumit] {
+    width: 40%;
+}
 .popular {}
 
 .footer {
-    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #666;
+    height: 20%;
+    text-align: center;
 
 }
 .footer ul {
+    display: flex;
+    margin: 50px 0;
 
 }
 .footer ul li {
+    padding: 0 20px;
     width: auto;
 }
 .footer ul li a {
     display: block;
+    color: #fff;
+    font-weight: bold;
 }
-.footer p {}
+.footer p {
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
 
 /* 우선순위 */
