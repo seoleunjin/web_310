@@ -8,8 +8,12 @@ body {
     background-image: linear-gradient(to left, #faf6ed 50% ,#efe8d5 50%);
     background-size: 60px 100%;
 }
-
-
+* {
+    margin: 0;
+    padding: 0;
+}
+ul, ol {list-style: none;}
+a {text-decoration: none;}
 /* 해더설정 -----------------------*/
 header {
     background-image: url(../img/header.svg);
@@ -39,10 +43,6 @@ header>p {
 
 
 
-* {
-    margin: 0;
-    padding: 0;
-}
 .container {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -226,6 +226,91 @@ header>p {
         background-color: #eda1a1;
     }
     
+
+/* 페이지네이션설정 */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+.pagination li {
+    margin: 0 10px;
+}
+.pagination li a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #949087;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+    .pagination li a:hover {
+        background-color: #93d8d0;
+        color: #fff;
+    }
+    .pagination li:last-child a:hover{
+        background-color: transparent;
+        color: #949087;
+        text-decoration: underline;
+
+    }
+.pagination .current a {
+    background-color: #ccc;
+    color: #fff;
+
+}
+
+.pagination li:first-child a:hover {
+    background-color: #ccc;
+    color: #fff;
+    opacity: 0.8;
+}
+
+/* 페이지와 페이지 구분라인 */
+.pagination li::after {
+    content: '\003C';
+    margin-left: 20px;
+    color: #949087;
+}
+.pagination li:last-child:after {
+    content: '\0020';
+    margin-left: 20px;
+    color: #949087;
+}
+.pagination li:nth-child(4):after {
+    content: '\0020';
+    margin-left: -10px;
+    color: #949087;
+}
+
+/* 푸터공간 */
+.footer {
+    margin-top: 60px;
+    background-color: #949087;
+    text-align: center;
+    padding: 48px;
+}
+.footer ul {
+    display: flex;
+    justify-content: center;
+}
+.footer ul li {
+    margin: 0 12px
+}
+.footer ul li a {
+    color: #fff;
+    display: block;
+}
+.footer ul li a:hover {
+    color: #000;
+}
+.footer p {
+    font-size: 14px;
+    color: #333;
+    margin-top: 20px;
+}
 
 
 /* 미디어쿼리구간 */
