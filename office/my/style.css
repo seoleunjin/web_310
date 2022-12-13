@@ -1,0 +1,107 @@
+@charset 'UTF-8';
+/* 전체설정 */
+* {margin: 0; padding: 0;}
+a {text-decoration: none; color: #888;}
+ul {list-style: none;}
+img {border: none; vertical-align: bottom;}
+
+
+/* 정체화면 설정 */
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+section h2 {
+    text-align: center;
+}
+section {
+    height: 800px;
+}
+#about {
+    background-color: #ddd;
+}
+#news {
+    background-color: #ccc;
+}
+#speakers {
+    background-color: #bbb;
+}
+#ticket {
+    background-color: #aaa;
+}
+
+
+/* 해더 설정 */
+header {}
+header .wrapper {
+    width: 100%;
+    display: flex;
+    background-color: #333;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+.logo {
+    padding: 14px;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+header ul {
+    display: flex;
+}
+header ul li {
+
+}
+header ul li a {
+    padding: 14px;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* 메인화면 설정 */
+.mainImg {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #4db1ec;
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: screen;
+    animation: bg 10s infinite;
+}
+
+/* 애니메이션 설정 */
+@keyframes boldh3 {
+    0% {
+        font-weight: bold;
+        font-size: 20px;
+    }
+    100% {
+        font-weight: normal;
+        font-size: 60px;
+    }
+}
+@keyframes bg {
+    0% {background-color: #4db1ec;}
+    12.5% {background-color: #5350e9;}
+    25% {background-color: #6f4dec;}
+    37.5% {background-color: #ec4ddf;}
+    50% {background-color: #ec4d4d;}
+    62.5% {background-color: #eca74d;}
+    75% {background-color: #4dec55;}
+    87.5% {background-color: #4dec8f;}
+    100% {background-color: #4db1ec;} 
+}
+
+.mainImg h3 {
+    font-size: 20px;
+    font-weight: bold;
+    animation: boldh3 4s infinite alternate;
+}
+

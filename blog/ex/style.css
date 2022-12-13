@@ -3,7 +3,7 @@
 
 /* 언어설정 */
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Paytone+One&display=swap');
-</style>
+
  /* 전체설정 */
 * {margin: 0; padding: 0;}
 a {text-decoration: none;
@@ -50,11 +50,14 @@ font-family: 'Paytone One', sans-serif;
 }
 .box3 h2 {
     font-size: 36px;
+    padding: 20px 0;
 
 }
 .box3 h3 {
     border-left: solid 30px #7acba1;
     padding-left: 30px;
+    font-size: 25px;
+    margin-bottom: 10px;
 }
 .box3 img {
     margin-top: 20px;
@@ -65,29 +68,49 @@ font-family: 'Paytone One', sans-serif;
 .box3 p {
     font-size: 15px;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 50px;
     font-weight: normal;
 }
-/* 관련기사설정 */
-div.relevant {
-    width: 100%;
-    height: 200px;
-    background-color: beige;
-    align-items: center;
+
+/* sns설정 */
+.sns {
+    margin: 20px 0;
+}
+.sns ul {
+    display: flex;
+}
+.sns ul li {
+    flex: 1;
+}
+.sns ul li a {
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    color: #fff;
+    font-weight: bold;
+}
+.sns ul li a i {
+    padding-right: 5px;
+    color: #fff;
+}
+.sns ul li:nth-child(1) a {
+    background-color: #1da1f2;
+}
+.sns ul li:nth-child(2) a {
+    background-color: #1877f2;
+}
+.sns ul li:nth-child(3) a {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#833ab4+0,fd1d1d+36,f77737+68,c13584+100 */
+background: #833ab4; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #833ab4 0%, #fd1d1d 36%, #f77737 68%, #c13584 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #833ab4 0%,#fd1d1d 36%,#f77737 68%,#c13584 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #833ab4 0%,#fd1d1d 36%,#f77737 68%,#c13584 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#833ab4', endColorstr='#c13584',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
     
 }
-.relevant h4 {
-    margin-top: 20px;
-    background-color: beige;
-    margin-bottom: 0;
-    color: indianred;
-}
-.relevant img {
-    width: 98px;
-    height: auto;
-    margin: 0;
-    padding: 0;
-}
+
+
 
 /* 특집기사 */
 .article {
@@ -109,6 +132,11 @@ div.relevant {
     display: block;
     font-size: 14px;
 }
+.article li a i {
+    font-size: 12px;
+    color: #666;
+    padding-right: 10px;
+}
 
 /* 추천기사 */
 .recommend {
@@ -125,10 +153,29 @@ div.relevant {
 }
 .recommend li {
     margin-top: 10px;
+    position: relative;
 }
 .recommend li>a {
     display: block;
     font-size: 14px;
+}
+
+.recommend img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+.recommend .text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(00, 00, 00, 0.5);
+    color: #fff;
+    width: 100%;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 /* 인기기사 */
@@ -146,15 +193,38 @@ div.relevant {
     color: #666;
 }
 .popular li {
+    content: "";
+    display: block;
     margin-top: 10px;
+    border-bottom: 3px dotted #ddd;
 }
 .popular li>a {
     display: block;
     font-size: 14px;
 }
+.popular li a::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.popular .text {
+    float: none;
+    width: auto;
+    margin-left: 60px;
+}
+.popular img {
+    float: left;
+    width: auto;
+}
+.popular span {
+    display: block;
+    font-size: 12px;
+    color: #666;
+}
 
 /* 푸터영역 */
 .box5 {
+    width: 100%;
     border-top: solid 1px #ddd;
 }
 .box5 p {
@@ -167,7 +237,10 @@ div.relevant {
 
 
 /* 마진영역 */
+.box1, .box2, .box3 {
+    padding-left: 10px;
 
+}
 /* 모바일 설정 */
 
 @media (min-width:768px){
@@ -188,9 +261,165 @@ div.relevant {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
+/* 미디어설정 */
+/* 모바일구간 1*/ 
 
+
+@media (max-width:599px){
+/* sns영역 */
+.sns span {
+    display: inline-block;
+    text-indent: -9999px;
+
+}
+/* 관련기사설정 */
+.relevant {
+    width: 100%;
+    background-color: beige;
+}      
+.relevant h4 {
+    color: indianred;
+}
+
+.relevant ul {
+}
+.relevant ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.relevant ul li {
+    text-align: center;
+    float: left;
+    width: 50%;
+}
+.relevant ul li a {
+    display: block;
+}
+.relevant img {
+    width: 100%;
+    height: 100%;
+}
+
+}
+
+/* 모바일구간2 */
+
+@media (min-width:600px) and (max-width:767px){
+
+
+
+
+    .box4-1 {
+        float: left;
+        width: 49%;
+    }
+    .box4-2 {
+        float: right;
+        width: 49%;
+    }
+    .box4 {
+        padding-left: 10px;
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+
+/* 푸터영역 */
+.box5 {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    border-top: solid 1px #ddd;
+}
+.box5 p {
+    padding-left: 10px;
+    margin: 10px 0;
+    font-size: 20px;
+    color: #ddd;
+}
+/* 관련기사설정 */
+.relevant {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: beige;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}      
+.relevant h4 {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: beige;
+    margin-bottom: 0;
+    color: indianred;
+}
+
+.relevant ul {display: flex;
+            padding: 10px;
+}
+.relevant ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.relevant ul li {width: 25%;
+                padding: 10px 10px;}
+.relevant ul li a {display: block;
+                    width: ;
+                    text-align: center;}
+.img {}
+.relevant img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+}
 /* 웹설정 */
+
 @media (min-width:1280px){
     .box1, .boxA {width: 1280px;
                     margin: 0 auto;} 
+/* 관련기사설정 */
+.relevant {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: beige;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}      
+.relevant h4 {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: beige;
+    margin-bottom: 0;
+    color: indianred;
+}
+
+.relevant ul {display: flex;
+            padding: 10px;
+}
+.relevant ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.relevant ul li {width: 25%;
+                padding: 10px 10px;}
+.relevant ul li a {display: block;
+                    width: ;
+                    text-align: center;}
+.img {}
+.relevant img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
 }

@@ -1,0 +1,120 @@
+/* 언어설정 */
+@charset "UTF-8";
+/* 전체설정 */
+* {margin: 0; padding: 0;}
+a {text-decoration: none; color: #888;}
+ul {list-style: none;}
+img {border: none; vertical-align: bottom;}
+html {scroll-behavior: smooth;} /* 부드럽게 움직이게 한다 */
+
+/* 전체화면 설정 */
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+section h2 {
+    text-align: center;
+}
+section {
+    height: 800px;
+}
+/* 화면을 전체회면으로 옮기기 전 */
+#about {
+    background-color: #ddd;
+}
+#news {
+    background-color: #ccc;
+}
+#speakers {
+    background-color: #bbb;
+}
+#ticket {
+    background-color: #aaa;
+}
+
+/* 해더설정 */
+header {
+    width: 100%;
+    padding: 16px 0;
+    background-color: #333;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    padding: 10px 20px;
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+nav ul {
+    display: flex;
+}
+nav ul li {
+
+}
+nav ul li a {
+    padding: 10px 20px;
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+/* 메인 이미지 설정 */
+.mainImg {
+    text-align: center;
+    height: 600px; /* 임의설정 */
+    background-color: #4db1ec;
+    background-image: url(/img/hero.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-blend-mode: screen;
+    display: flex;
+    align-items: center;
+    animation: bg 24s infinite;
+}/* 컬러를 쓰고 이미지 쓰기  뒤에 컬러를 넣으면 이미지가 없어짐*/
+
+
+
+/* 애니메이션 설정 */
+
+@keyframes boldh3 {
+
+    0% {
+        font-weight: bold;
+        font-size: 20px;
+    }
+    100% {
+        font-weight: normal;
+        font-size: 60px;
+    }
+}
+
+@keyframes bg {
+    0% {background-color: #4db1ec;}
+    12.5% {background-color: #1665cc;}
+    25% {background-color: #b473bf;}
+    37.5% {background-color: #ffb2c1;}
+    50% {background-color: #ff9f67;}
+    62.5% {background-color: #ffd673;}
+    75% {background-color: #a2e27b;}
+    87.5% {background-color: #00a2af;}
+    100% {background-color: #4db1ec;}
+}
+
+
+
+.mainImg h3 {
+    font-weight: bold;
+    font-size: 20px;
+    animation: boldh3 3s infinite alternate; 
+}/* 0%의 값과 똑같게 설정해야 깜빡임이 없다 */
+
+
+/* 미디어 설정################################ */

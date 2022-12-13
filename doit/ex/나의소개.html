@@ -3,46 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" minimum-scale=1, maximun-scale=1, user-scalable=no>
     <title>나의소개</title>
 
     <!-- 폰트어썸 연결 -->
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <script src="https://use.fontawesome.com/b15c56ccc9.js"></script>
+    <script src="https://use.fontawesome.com/b15c56ccc9.js"></script>\
+    <!-- 그리드가이드 연결 
+    <link rel="stylesheet" href="grid-guide.css">-->
     <!-- 외부스타일시트 -->
     <link rel="stylesheet" href="나의소개.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <!-- 자바스크립트 동작구현 -->
+    <script>
+
+        // 메뉴버튼을 클릭했을때, gnb를 보이게 해라
+
+        $(document).ready(function(){
+            $('.toggle_A').click(function(){
+                $('.menu').slideToggle()
+
+
+            })
+
+
+
+
+        })
+
+
+
+
+    </script>
 </head>
 <body>
     <div class="wrap">
+        <header class="header">
     <section class="info">
-        <ul class="info_A">
+        <ul class="info">
             <li><a href="#"><i class="fa fa-bicycle" aria-hidden="true"></i></a></li>
             <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
             <li><a href="#"><i class="fa fa-coffee" aria-hidden="true"></i></a></li>
         </ul>
     </section>
-
-        <header class="header">
-                <nav class="logo_A">
-                    <h1 class="logo">
+                <h1 class="logo">
                         <a href="나의소개.html">나의소개 <br> 설은진</a>
-                    </h1>
-                </nav>
-            <nav class="nav">
+                </h1>
+            <div class="nav">
                 <ul class="menu">
                     <li><a href="#">MBTI</a><span class="toggle_1">하위메뉴 토글버튼</span></li>
                     <li><a href="#">가족구성</a><span class="toggle_1">하위메뉴 토글버튼</span></li>
                     <li><a href="#">취미</a><span class="toggle_1">하위메뉴 토글버튼</span></li>
                 </ul>
-            </nav>
+            </div>
             <span class="toggle_A">전체메뉴 토글버튼</span>
         </header>
+            <div class="slider_section">
+                <span class="prev_btn">이전버튼</span>
+                <span class="next_btn">다음버튼</span>
+            </div>
+            <div class="box2">
+                <div>
+                    <ul>
+                        <li>
+                            <a href=""><img src="http://picsum.photos/200/100"><span>더 알아가기</span></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="http://picsum.photos/200/100"><span>더 알아가기</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box7">
+                <div class="box7-1">
+                    <ul>
+                        <li>
+                            <a href=""><img src="http://picsum.photos/200/100"><div class="text">더 알아가기</div></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="http://picsum.photos/200/100"><div class="text">더 알아가기</div></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-
-        </div>
-
-
-
-    </div>
+        <section class="story">
+            <h2>대구</h2>
+            <ul class="deagu">
+                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>중구</a></li>
+                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>북구</a></li>
+                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>달서구</a></li>
+                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>수성구</a></li>
+            </ul>
+        </section>
+        <section class="box4">
+            <h2>TITLE</h2>
+        <ul>
+            <li><a href="#">TEXT</a></li>
+            <li><a href="#">TEXT</a></li>
+            <li><a href="#">TEXT</a></li>
+            <li><a href="#">TEXT</a></li>
+        </ul>
+        </section>
+        <section class="box5">
+            <h2>TITLE</h2>
+            <ul>
+                <li><a href="#">TEXT</a></li>
+                <li><a href="#">TEXT</a></li>
+                <li><a href="#">TEXT</a></li>
+                <li><a href="#">TEXT</a></li>
+            </ul>
+        </section>
+        <section class="box6">
+            <p>Copyright ⓒ 2022. SEOLEUNJIN All rights reserved.</p>
+        </section>
+        <section class="sns">
+            <ul class="social">
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+            </ul>
+        </section>
+</div>
 </body>
 </html>
