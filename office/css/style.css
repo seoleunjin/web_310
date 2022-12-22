@@ -13,24 +13,38 @@ html {scroll-behavior: smooth;} /* 부드럽게 움직이게 한다 */
     margin: 0 auto;
 }
 section h2 {
+    font-weight: normal;
     text-align: center;
+    font-family: impact, sans-serif;
+    font-size: 80px;
+    margin-bottom: 30px;
 }
 section {
-    height: 800px;
+    padding: 7em 0;
 }
-/* 화면을 전체회면으로 옮기기 전 */
+section .wrapper {
+    padding: 4em 1em;
+}
 #about {
-    background-color: #ddd;
+    height: 100vh;
+    background-color: #fff;
+    clip-path: polygon(0 0, 100% .0, 100 100%, 0 100%);
 }
+
 #news {
-    background-color: #ccc;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
 }
 #speakers {
-    background-color: #bbb;
+    background-color: #fff;
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
 }
 #ticket {
-    background-color: #aaa;
+    height: 100vh;
+    background-image: linear-gradient( 190deg,  rgba(150,93,233,1) 10.8%, rgba(99,88,238,1) 94.3% );
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
 }
+
 
 /* 해더설정 */
 header {
@@ -40,6 +54,7 @@ header {
     position: fixed;
     left: 0;
     top: 0;
+    z-index: 10;
 }
 header .wrapper {
     display: flex;
@@ -64,11 +79,15 @@ nav ul li a {
     font-size: 20px;
     color: #fff;
     font-weight: bold;
+    transition: all 0.3s;
+}
+nav ul li a:hover {
+    color: #1665cc;
 }
 /* 메인 이미지 설정 */
 .mainImg {
     text-align: center;
-    height: 600px; /* 임의설정 */
+    height: 100vh; /* 임의설정 */
     background-color: #4db1ec;
     background-image: url(/img/hero.jpg);
     background-size: cover;
@@ -78,13 +97,29 @@ nav ul li a {
     display: flex;
     align-items: center;
     animation: bg 24s infinite;
+    clip-path: polygon(0 0, 100% 0px, 100% 90%, 0 100%);
 }/* 컬러를 쓰고 이미지 쓰기  뒤에 컬러를 넣으면 이미지가 없어짐*/
 
-
-
+.mainImg h3 {
+    font-size: 160px;
+    font-family: impact, sans-serif;
+    font-weight: normal;
+    margin-bottom: 50px;
+}
+.mainImg P:nth-child(2) {
+    padding: 25px;
+    font-size: 80px;
+    font-family: impact, sans-serif;
+    border-top: 5px solid #000;
+    border-bottom: 5px solid #000;
+}
+.mainImg P:nth-child(3) {
+    margin-top: 50px;
+    font-size: 25px;
+}
 /* 애니메이션 설정 */
 
-@keyframes boldh3 {
+/* @keyframes boldh3 {
 
     0% {
         font-weight: bold;
@@ -94,7 +129,7 @@ nav ul li a {
         font-weight: normal;
         font-size: 60px;
     }
-}
+} */
 
 @keyframes bg {
     0% {background-color: #4db1ec;}
@@ -110,11 +145,143 @@ nav ul li a {
 
 
 
-.mainImg h3 {
+/* .mainImg h3 {
     font-weight: bold;
     font-size: 20px;
     animation: boldh3 3s infinite alternate; 
-}/* 0%의 값과 똑같게 설정해야 깜빡임이 없다 */
+} */
+    /* 0%의 값과 똑같게 설정해야 깜빡임이 없다 */
 
+/* about설정 */
+#about h2 {
+    background-image: linear-gradient( 106.5deg,  rgba(255,215,185,0.91) 23%, rgba(223,159,247,0.8) 93% );    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#about>div p {
+    text-align: center;
+    margin-bottom: 3em;
+}
+#about>div img {
+    width: 100%;
+    height: 100%;
+}
+/* news설정 */
+#news h2 {
+    font-weight: normal;
+    color: #fff;
+}
+#news ul {
+    width: 80%;
+    margin: 0 auto;
+}
+#news li {}
+#news li a {
+    display: block;
+    padding: 20px;
+    font-size: 18px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+#news li a:hover {
+    background-color: white;
+    color: #00a2af;
+}
+#news li a span {
+    display: inline-block;
+    margin-right: 10px;
+    width: 180px;
+}
+/* speakers설정 */
+#speakers h2 {
+    background: linear-gradient( 109.6deg,  rgba(238,58,136,1) 11.2%, rgba(128,162,245,1) 91.1% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#speakers .wrapper>div {
+    margin-bottom: 20px;
+    display: flex;
+}
+#speakers .text{
+    width: 80%;
+    order: 2;
+    padding: 10px 40px;
+}
+#speakers img {
+    order: 1;
+    width: 20%;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    transition: all 0.5s;
+    filter: blur(5px);
+}
+#speakers .wrapper>div:hover img {
+    border: 1px solid  rgba(128,162,245,1);
+    padding: 10px;
+    box-sizing: border-box;
+    filter: none;
+}/* 이미지에게 호버를 주지 않음 */
+/* ticket설정 */
+#ticket {
+}
+#ticket form {
+    width: 500px;
+    margin: 0 auto;
+}
+#ticket label {
+    color: #fff;
+    margin-bottom: 0.5em;
+}
+#ticket .ticket {
+    box-sizing: border-box;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: none;
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+#ticket .ticket:focus{
+    outline: none;
+}
+/* input클릭시 안에 생기는 outline을 사라지게 할시 포커스 사용 */
+#ticket .btn {
+    width: 100%;
+    padding: 1em;
+    font-size: 18px;
+    border: none;
+    background-color: #fff;
+    color: rgba(99,88,238,1);
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bold;
+}
+#ticket .btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+#ticket h2 {
+    color: #fff;
+}
+.text P {
+    font-size: 28px;
+}
+.text h4 {
+    font-size: 32px;
+    font-family: impact, sans-serif;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+/* 카피라이트 설정 */
+.copy {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    margin-top: 80px;
+    padding-top: 40px;
+
+}
+.copy p {
+    color: #fff;
+    text-align: center;
+}
 
 /* 미디어 설정################################ */

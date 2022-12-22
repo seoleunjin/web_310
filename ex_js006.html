@@ -7,7 +7,7 @@
     <title>평균값 내기</title>
 </head>
 <style>
-         @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
         body {background-image: linear-gradient(to left, #eeeeee 50%,#ffffff 50%);
             background-size: 20px 100%;
             font-family: 'Do Hyeon', sans-serif;
@@ -59,28 +59,72 @@ flex-wrap: wrap; width: 100%;}
             <li>평균</li>
         </ul>
         <ul class="write">
-            <li id="kor"><button id="kors">click</button></li>
-            <li id="math"><button id="maths">click</button></li>
-            <li id="eng"><button id="eng">click</button></li>
-            <li id="add"><button>click</button></li>
-            <li id="avg"><button>click</button></li>
+            <li id="kor"></li>
+            <li id="math"></li>
+            <li id="eng"></li>
+            <li id="add"></li>
+            <li id="avg"></li>
         </ul>
     </div>
 
     <div id="result"></div>
 
+
     <script>
-        let kor = Number(prompt('국어점수는?'));
-        let math = Number(prompt('수학점수는?'));
-        let eng = Number(prompt('영어점수는?'));
-        document.getElementById('kor').addEventListener('click'
-        function (){
-            alert('당신의 국어 점수는' +kor+ '점입니까?')
-        }
-        )
+    let adds = document.getElementById('add')
+    
+    let kors = document.getElementById('kor')
+    let maths = document.getElementById('math')
+    let engs = document.getElementById('eng')
+    
+    
+    kors.addEventListener('click',
+    function(event){
+        
+        var kork = Number(prompt('국어점수는?'))
+        
+        document.getElementById('kor').innerHTML= kork;
+        System.out.printin()
+    })
+    maths.addEventListener('click',
+    function(event){
+        
+        var mathm = Number(prompt('국어점수는?'))
+        
+        document.getElementById('math').innerHTML= mathm;
+    })
+    engs.addEventListener('click',
+    function(event){
+        
+        var enge = Number(prompt('국어점수는?'))
+        
+        document.getElementById('eng').innerHTML= enge;
+    })
+
+
+    
+    // var kork = Number(prompt('국어점수는?'))
+    // var mathm = Number(prompt('국어점수는?'))
+    // var enge = Number(prompt('국어점수는?'))
+    // let allk = document.getElementById('kor').innerHTML= kork;
+    // let allm = document.getElementById('math').innerHTML= mathm;
+    // let alle = document.getElementById('eng').innerHTML= enge;
+    // let all = allk+allm+alle;
+    // document.getElementById('add').innerHTML= all;
+    
+
+
+    
+    
+    // 자바스크립트 선택하기방법
+    
+    
+
+
+
+
+
+
     </script>
-
-
 </body>
 </html>
-
